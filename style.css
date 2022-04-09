@@ -61,3 +61,7 @@ body {
   color: #fff;
   border-bottom-color: #fff;
 }
+.scrolling{
+  background-color: black;
+  opacity: 70%;
+}
