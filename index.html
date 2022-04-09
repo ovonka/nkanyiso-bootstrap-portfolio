@@ -30,6 +30,7 @@
     />
 
     <!-- Custom styles for this template -->
+    <link rel="icon" href="./assets/favicon.b.png" />
     <link href="./style.css" rel="stylesheet" />
   </head>
   <body class="bg-light">
@@ -44,16 +45,13 @@
         </nav>
       </div>
     </header>
-    <div class="banner-wrap vh-100 vw-100 d-flex align-items-center justify-content-center text-white">
+    <div
+      class="banner-wrap vh-100 vw-100 d-flex align-items-center justify-content-center text-white"
+    >
       <div class="overlay"></div>
-      <main
-        class="text-center"
-      >
+      <main class="text-center">
         <h1 class="display-3">I am Nkanyiso Ntshangase.</h1>
-        <span id="typed" class="lead">
-         
-        </span>
-       
+        <span id="typed" class="lead"> </span>
       </main>
     </div>
 
@@ -213,23 +211,39 @@
 
             <form>
               <div class="mb-3">
-               
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email Address">
-              
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  placeholder="Email Address"
+                />
               </div>
               <div class="mb-3">
-             
-                <input type="text" class="form-control" id="name" placeholder="Name">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Name"
+                />
               </div>
               <div class="mb-3">
-             
-                <input type="text" class="form-control" id="Subject" placeholder="Subject">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="Subject"
+                  placeholder="Subject"
+                />
               </div>
               <div class="mb-3">
-             
-                <textarea class="form-control" aria-label="With textarea" style="height: 100px" placeholder="Comments"></textarea>
+                <textarea
+                  class="form-control"
+                  aria-label="With textarea"
+                  style="height: 100px"
+                  placeholder="Comments"
+                ></textarea>
               </div>
-            
+
               <button type="submit" class="btn btn-primary">Submit</button>
             </form>
           </div>
@@ -238,31 +252,27 @@
     </section>
     <footer class="bg-dark text-white text-center">
       <div class="container p-3">
-
-        <p> Developed by Nkanyiso Ntshangase using Bootstrap, for portfolio purposes.</p>
+        <p>
+          Developed by Nkanyiso Ntshangase using Bootstrap, for portfolio
+          purposes.
+        </p>
       </div>
-
-
     </footer>
 
-
     <script>
-
-window.addEventListener("scroll", () => {
+      window.addEventListener("scroll", () => {
         const header = document.querySelector("header");
         header.classList.toggle("scrolling", window.scrollY > 0);
       });
-
-
     </script>
-      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-      <script>
-        var typed = new Typed("#typed", {
-          strings: ["Junior Web Developer.", "Forex Trader.", "Entrepreneur."],
-          loop: true,
-          typeSpeed: 75,
-          shuffle: true,
-        });
-      </script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      var typed = new Typed("#typed", {
+        strings: ["Junior Web Developer.", "Forex Trader.", "Entrepreneur."],
+        loop: true,
+        typeSpeed: 75,
+        shuffle: true,
+      });
+    </script>
   </body>
 </html>
