@@ -1,20 +1,7 @@
-/*
-* Globals
-*/
 
-
-
-/*
- * Base structure
- */
-
-
-
-
-
-/*
- * Header
- */
+ body{
+   overflow-x: hidden;
+ }
  .banner-wrap{
   background-image: url(./assets/bgnimage.jpg);
   background-size: cover;
