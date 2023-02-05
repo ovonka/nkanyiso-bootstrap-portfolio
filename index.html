@@ -32,6 +32,16 @@
     <!-- Custom styles for this template -->
     <link rel="icon" href="./assets/favicon.b.png" />
     <link href="./style.css" rel="stylesheet" />
+    <script type="text/javascript" src="app.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("gs-dJjfUpBoWdxymy");
+      })();
+    </script>
   </head>
   <body class="bg-light">
     <header class="px-5 p-3 text-white fixed-top">
@@ -365,12 +375,12 @@
               ><i class="bi bi-github m-2"></i
             ></a>
 
-            <form>
+            <form onsubmit="sendEmail(); reset(); return false">
               <div class="mb-3">
                 <input
                   type="email"
                   class="form-control"
-                  id="exampleInputEmail1"
+                  id="email"
                   aria-describedby="emailHelp"
                   placeholder="Email Address"
                 />
@@ -387,7 +397,7 @@
                 <input
                   type="text"
                   class="form-control"
-                  id="Subject"
+                  id="subject"
                   placeholder="Subject"
                 />
               </div>
@@ -396,7 +406,8 @@
                   class="form-control"
                   aria-label="With textarea"
                   style="height: 100px"
-                  placeholder="Comments"
+                  id="message"
+                  placeholder="Message"
                 ></textarea>
               </div>
 
@@ -430,5 +441,18 @@
         shuffle: true,
       });
     </script>
+    <!-- <script type="text/javascript" src="app.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("gs-dJjfUpBoWdxymy");
+      })();
+    </script> -->
   </body>
 </html>
+
+<!-- 7e42cb99-b27f-4d4c-b911-e8eb6749bf07 -->
+<!-- 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 -->
